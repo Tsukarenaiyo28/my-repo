@@ -1,0 +1,7 @@
+name: Context #ワークフロー名
+on: push
+jobs: #ジョブの定義
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{github.actor}}" #githubコンテキストの参照
